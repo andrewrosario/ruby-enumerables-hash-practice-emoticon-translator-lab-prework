@@ -6,7 +6,8 @@ def load_library(j_emotes)
   transl = {"get_meaning" => {}, "get_emoticon" => {}}
   data = YAML.load_file(j_emotes)
   data.each_pair do |key, value|
-    transl["get_meaning"][value] = "key"
+    p value
+    #transl["get_meaning"][value] = "key"
   end
   
       p transl
