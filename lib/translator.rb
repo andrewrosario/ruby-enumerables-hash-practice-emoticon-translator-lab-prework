@@ -8,7 +8,7 @@ def load_library(j_emotes)
   data.each_pair do |key, value|
     p value
     transl["get_meaning"][value[1]] = key
-    transl["get_emoticon"][value[0]] = key
+    transl["get_emoticon"][value[0]] = value[1]
   end
   
       p transl
