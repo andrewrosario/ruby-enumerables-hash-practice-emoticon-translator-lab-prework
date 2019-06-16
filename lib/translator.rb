@@ -15,7 +15,11 @@ end
 def get_japanese_emoticon(path, emoticon)
   # code goes here
   load_library(path)["get_emoticon"].each_pair do |key, value| 
-    key == emoticon ? return value : return "Sorry, that emoticon was not found"
+    if key == emoticon
+      return value
+    else
+      return "Sorry, that emoticon was not found"
+    end
   end
 end
 
