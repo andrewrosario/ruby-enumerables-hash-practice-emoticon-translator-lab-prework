@@ -26,6 +26,5 @@ def get_english_meaning
   # code goes here
 end
 
-load_library() 
 get_japanese_emoticon("./lib/emoticons.yml", "(￣ー￣)")
 
