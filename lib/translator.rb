@@ -14,7 +14,10 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   # code goes here
-  load_library(path)
+  load_library(path)["get_emoticon"].map do |n| 
+    if n == emoticons
+      return load_library(path)["get_emoticon"][n]
+    end
   
 end
 
