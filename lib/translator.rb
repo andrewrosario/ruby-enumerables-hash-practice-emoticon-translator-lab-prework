@@ -17,7 +17,7 @@ def get_japanese_emoticon(path, emoticon)
   load_library(path)["get_emoticon"].each_pair do |key, value| 
     puts n
     if key == emoticon
-      return load_library(path)["get_emoticon"][n]
+      return value
     end
   end
 end
