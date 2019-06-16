@@ -1,7 +1,16 @@
 # require modules here
+require "yaml"
 
-def load_library
-  # code goes here
+
+def load_library(j_emotes)
+  transl = {:get_meaning => {}, :get_emoticon => {}}
+  data = YAML.load_file(j_emotes)
+  data.each_pair do |key, value|
+    p transl
+    transl[:get_meaning][value] = key
+  end
+  
+  
 end
 
 def get_japanese_emoticon
