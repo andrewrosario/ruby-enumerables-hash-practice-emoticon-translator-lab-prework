@@ -14,8 +14,7 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   # code goes here
-  load_library(path)["get_emoticon"].each_pair do |key, value| 
-    puts n
+  load_library(path)["get_emoticon"].each_pair do |key, value|     puts n
     if key == emoticon
       return value
     end
